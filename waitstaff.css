@@ -14,6 +14,24 @@ main {
 	overflow: hidden;
 }
 
+nav ul {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	border-left: 3px solid #333;
+}
+nav li:first-child {
+	border-left: none;
+}
+nav li a {
+	display: inline-block;
+	padding: .1em .7em;
+}
+
 h1 {
 	text-align: center;
 	margin: 0;
