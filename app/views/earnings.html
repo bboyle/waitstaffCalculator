@@ -1,0 +1,24 @@
+<section id="earnings" ng-controller="earningsController as earnings">
+	<h2>My earnings for this shift</h2>
+	<table>
+		<tbody>
+			<tr>
+				<th>Tip total</th>
+				<td>{{ data.tip.total | currency : $ }}</td>
+			</tr>
+			<tr>
+				<th>Meal count</th>
+				<td>{{ data.mealCount }}</td>
+			</tr>
+			<tr>
+				<th>Average tip per meal</th>
+				<td>{{ data.tip.average | currency : $ }}</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+
+<footer ng-controller="resetController">
+	<button ng-click="reset()">Reset</button>
+</footer>

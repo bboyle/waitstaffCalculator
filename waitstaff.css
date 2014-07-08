@@ -14,27 +14,40 @@ main {
 	overflow: hidden;
 }
 
+nav ul {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	border-left: 3px solid #333;
+}
+nav li:first-child {
+	border-left: none;
+}
+nav li a {
+	display: inline-block;
+	padding: .1em .7em;
+}
+
 h1 {
 	text-align: center;
 	margin: 0;
 }
 
 footer {
-	text-align: right;
+	text-align: center;
 }
 
 
 /* SECTION LAYOUT */
 
 section {
-	margin: 0 0 1.5rem 0;
+	margin: 1em auto;
 	border: .3rem solid #000;
-	float: right;
-	width: 45%;
-}
-#form {
-	float: left;
-	width: 48%;
+	max-width: 30em;
 }
 h2 {
 	font-size: 120%;
