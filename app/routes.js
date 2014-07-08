@@ -11,8 +11,7 @@ angular.module( 'waitstaff' )
 			})
 
 			.when( '/my-earnings', {
-				templateUrl: 'app/views/earnings.html',
-				controller: 'earningsController'
+				templateUrl: 'app/views/earnings.html'
 			})
 
 			.otherwise({ redirectTo: '/' })
