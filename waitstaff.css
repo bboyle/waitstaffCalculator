@@ -38,21 +38,16 @@ h1 {
 }
 
 footer {
-	text-align: right;
+	text-align: center;
 }
 
 
 /* SECTION LAYOUT */
 
 section {
-	margin: 0 0 1.5rem 0;
+	margin: 1em auto;
 	border: .3rem solid #000;
-	float: right;
-	width: 45%;
-}
-#form {
-	float: left;
-	width: 48%;
+	max-width: 30em;
 }
 h2 {
 	font-size: 120%;
