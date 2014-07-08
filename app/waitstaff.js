@@ -1,2 +1,2 @@
 // create app
-angular.module( 'waitstaff', [] );
+angular.module( 'waitstaff', [ 'ngRoute' ] );
