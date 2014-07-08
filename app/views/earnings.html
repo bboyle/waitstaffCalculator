@@ -1,4 +1,4 @@
-<section id="earnings">
+<section id="earnings" ng-controller="earningsController as earnings">
 	<h2>My earnings for this shift</h2>
 	<table>
 		<tbody>
@@ -17,3 +17,8 @@
 		</tbody>
 	</table>
 </section>
+
+
+<footer ng-controller="resetController">
+	<button ng-click="reset()">Reset</button>
+</footer>
