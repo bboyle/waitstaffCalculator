@@ -3,24 +3,17 @@ angular.module( 'waitstaff' )
 
 	// intialise
 	function init() {
+		// console.log( 'init', TIPS );
 		$scope.data = {
 			tip: {
-				total: 0,
-				average: 0
+				total: TIPS.amount,
+				average: TIPS.amount / TIPS.meals || 0
 			},
-			mealCount: 0
+			mealCount: TIPS.meals
 		};
 	}
 	// onready
 	init();
 	// onreset
 	$scope.$on( 'reset', init );
-
-
-	// when a meal charge is rung up …
-	$scope.$on( 'charge', function( event, data ) {
-		$scope.data.tip.total += data.tip;
-		$scope.data.mealCount ++;
-		$scope.data.tip.average = $scope.data.tip.total / $scope.data.mealCount;
-	});
 });

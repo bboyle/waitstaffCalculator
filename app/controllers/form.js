@@ -24,6 +24,9 @@ angular.module( 'waitstaff' )
 			tip: Math.round( subtotal * $scope.data.tipPercentage ) / 100
 		}
 
+		// update model
+		TIPS.add( charge.tip );
+
 		$rootScope.$broadcast( 'charge', charge );
 	};
 });

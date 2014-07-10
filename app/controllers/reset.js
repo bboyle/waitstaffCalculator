@@ -3,6 +3,7 @@ angular.module( 'waitstaff' )
 
 	// handle submission
 	$scope.reset = function() {
+		TIPS.init();
 		$rootScope.$broadcast( 'reset' );
 	};
 });
