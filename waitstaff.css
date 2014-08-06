@@ -126,27 +126,41 @@ input[type="reset"]:active {
 
 
 /* route change animation */
-.dissolve.ng-enter {
-	transition: .4s .4s linear all;
+main {
+	min-height: 40em;
+	/*outline: 1px solid red;*/
+	position: relative;
 }
-.dissolve.ng-leave {
-	transition: .3s linear all;
+.dissolve {
+	transform-origin: 50% 40em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
+
 /* set initial state for showing pages */
 .dissolve.ng-enter {
+	transition: .3s .13s ease all;
 	opacity: 0;
 	z-index: 100;
+	transform: rotate(90deg);
 }
 /* transition properties */
 .dissolve.ng-enter.ng-enter-active {
 	opacity: 1;
+	transform: rotate(0);
 }
+
 /* initial state for leaving pages */
 .dissolve.ng-leave {
+	transition: .3s ease all;
 	opacity: 1;
 	z-index: 99;
+	transform: rotate(0);
 }
 /* transition properties */
 .dissolve.ng-leave.ng-leave-active {
 	opacity: 0;
+	transform: rotate(-90deg);
 }
