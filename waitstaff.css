@@ -117,10 +117,36 @@ input[type="reset"]:active {
 }
 
 
-
 /* specifics */
 
 /* units in table */
 .units {
 	text-align: center;
+}
+
+
+/* route change animation */
+.dissolve.ng-enter {
+	transition: .4s .4s linear all;
+}
+.dissolve.ng-leave {
+	transition: .3s linear all;
+}
+/* set initial state for showing pages */
+.dissolve.ng-enter {
+	opacity: 0;
+	z-index: 100;
+}
+/* transition properties */
+.dissolve.ng-enter.ng-enter-active {
+	opacity: 1;
+}
+/* initial state for leaving pages */
+.dissolve.ng-leave {
+	opacity: 1;
+	z-index: 99;
+}
+/* transition properties */
+.dissolve.ng-leave.ng-leave-active {
+	opacity: 0;
 }
