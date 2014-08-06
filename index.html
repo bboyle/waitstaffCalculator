@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Waitstaff calculator</title>
 	<link rel="stylesheet" href="waitstaff.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-route.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-route.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular-animate.min.js"></script>
 	<script src="app/waitstaff.js"></script>
 	<script src="app/model.js"></script>
 	<script src="app/routes.js"></script>
@@ -28,7 +29,9 @@
 	</header>
 
 
-	<main ng-view></main>
+	<main>
+		<div ng-view class="dissolve"></div>
+	</main>
 
 
 </body>
