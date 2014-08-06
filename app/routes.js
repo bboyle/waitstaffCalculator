@@ -1,20 +1,20 @@
 // create app
 angular.module( 'waitstaff' )
-.config(function( $routeProvider ) {
-	$routeProvider
-		.when( '/', {
-			templateUrl: 'app/views/index.html'
-		})
+	.config(function( $routeProvider ) {
+		$routeProvider
+			.when( '/', {
+				templateUrl: 'app/views/index.html'
+			})
 
-		.when( '/new-meal', {
-			templateUrl: 'app/views/meal.html'
-		})
+			.when( '/new-meal', {
+				templateUrl: 'app/views/meal.html'
+			})
 
-		.when( '/my-earnings', {
-			templateUrl: 'app/views/earnings.html'
-		})
+			.when( '/my-earnings', {
+				templateUrl: 'app/views/earnings.html'
+			})
 
-		.otherwise({ redirectTo: '/' })
-	;
-})
+			.otherwise({ redirectTo: '/' })
+		;
+	})
 ;
