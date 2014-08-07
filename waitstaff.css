@@ -141,7 +141,7 @@ main {
 
 /* set initial state for showing pages */
 .dissolve.ng-enter {
-	transition: .3s .13s ease all;
+	transition: .3s .13s cubic-bezier(.32,1.16,.79,1.23) all;
 	opacity: 0;
 	z-index: 100;
 	transform: rotate(90deg);
